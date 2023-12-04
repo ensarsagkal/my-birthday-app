@@ -1,10 +1,15 @@
 
 import './App.css';
+import data from "./data"
+import List  from "./List"
 
-function App() {
+
+
+ function App() {
   return (
     <div className="App">
-      
+      <List
+      data={data}/>
     </div>
   );
 }
