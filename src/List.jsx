@@ -1,13 +1,13 @@
 import React from 'react'
 
-const List = ({data}) => {
+const List = ({people}) => {
   return (
     <div className='card'>
 
-        {data.map(({id,name,age,image})=>(
+        {people.map(({id,name,age,image})=>(
             <div key={id} className='person'>
                 <img src={image} alt={name} />
-                <div>
+                <div className='title'>
                     <h4>{name}</h4>
                     <p>{age}</p>
                 </div>
